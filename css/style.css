@@ -1,0 +1,47 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:"Creepster";
+}
+div.container{
+    background:black;
+    max-width:600px;
+    margin:auto;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 700px;
+    }
+}
+::selection{
+    background:green;
+}
+h1.color{
+    color:#f60;
+    font-size:20px;
+    text-align:center;
+}
+h1.title{
+    color:#c2ff00;
+    text-align:center;
+}
+span.dotside{
+    color:#0053ff;
+}
+hr.underline{
+    border-style:outset;
+    border-color:#f60;
+}
+p.description{
+    color:#ffb300;
+    text-align:center;
+    font-size:18px;
+}
+marquee{
+    border:2px solid #00ff35;
+    border-style:dotted;
+    border-radius:5px solid #00ff35;
+    font-size:30px;
+    color:#00ffb1;
+}
