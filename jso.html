@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS FONT FAMILY-->
+    <link href='https://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>JSO GENERATOR</title>
+</head>
+<script>
+    function runCharCodeAt(){
+        input = document.charCodeAt.input.value;
+        output="";
+        for(i=0;i<input.length;++i){
+            if(output != "") output += ", ";
+            output +=input.charCodeAt(i);
+        }
+        document.charCodeAt.output.value=output;
+    }
+</script>
+<style>
+    ::selection{
+        background-color: #002939;
+        color:#E4CFA9;
+    }
+    *{
+        box-sizing: border-box;
+        margin: none;
+    }
+    body{
+        background-color: black;
+        font-family: "Butcherman";
+    }
+    h1.head{
+        color:#00ff44;
+        font-size:36px;
+    }
+    form.charCodeAt{
+        padding:20px;
+        left:0;
+        position:absolute;
+    }
+    textarea{
+        resize:none;
+        height: 200px;
+        padding:14px 15px;
+    }
+    footer{
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position:fixed;
+    }
+    footer span.myname{
+        font-size: 28px;
+        color: #00ff44;
+    }
+    footer p.create{
+        font-size: 24px;
+        color: #E4CFA9;
+    }
+</style>
+<body>
+    
+    <center>
+        <h1 class="head">JSO GENERATOR TOOL</h1>
+        <form name="charCodeAt"method="POST">
+            <textarea name="input"class="text-area"placeholder="Paste ur script here"rows="4"cols="50"></textarea><br><br>
+            <input type="button" onclick="runCharCodeAt()"value="Convert"><br><br>
+            <textarea name="output"class="textarea"rows="4"cols="50"></textarea>
+        </form>
+        <footer>
+            <p class="create">Created by <span class="myname">Admin</span> 2021-2022</p>
+        </footer>
+    </center>
+   
+</body>
+</html>
